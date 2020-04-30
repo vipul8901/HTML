@@ -1,0 +1,148 @@
+* {
+	margin:0;
+	padding:0;
+	border:0;
+	font-size:100%;
+	font:inherit;
+	vertical-align: baseline;
+	-webkit-box-sizing: border-box;
+	-moz--box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	background:#ffffff;
+	font-family: sans-serif;
+	line-height:1;
+	font-size:16px;
+}
+.left {
+	float:left;
+}
+.price-table {
+	width:80%;
+	margin:50px auto;
+	text-align:center;
+	padding:10px;
+	padding-right:0;
+}
+.block {
+	width:30%;
+	margin:0 15px;
+	overflow: hidden;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius: 5px;
+}
+.title,.foot{
+	color:#feeeee;
+	text-transform: capitalize;
+	line-height: 2.5;
+	position:relative;
+}
+.personal .title {
+	background: #27ae60;
+}
+.professional .title {
+	background: #2980b9;
+}
+.business .title {
+	background: #8e44ad;
+}
+
+
+.content {
+	position:relative;
+	color:#feeeee;
+	padding:20px 0 10px 0;
+}
+.content:after, .content:before,.foot:after,.foot:before {
+	top:100%;
+	left:50%;
+	border:solid transparent;
+	content: " ";
+	height:0;
+	width:0;
+	position:absolute;
+	pointer-events: none;
+}
+
+.foot:after, .foot:before {
+	top:0;
+}
+
+.content:after, .foot:after {
+	border-color:rgba(136,183,213,0);
+	border-width:5px;
+	margin-left:-5px;
+}
+.price {
+	position:relative;
+	display:inline-block;
+	margin-bottom:0.624rem;
+}
+.price span {
+	font-size:4rem;
+	letter-spacing: 8px;
+	font-weight:bold;
+}
+.price sup{
+	font-size:1.5rem;
+	position:absolute;
+	top:12px;
+	left:-12px;
+}
+.help {
+	font-style: italic;
+	font-size:0.9rem;
+}
+.features {
+	list-style-type: none;
+	background:#d3d3d3;
+	text-align: left;
+	color:black;
+	padding:30px 22% 30px 10%;
+	font-size:0.9rem;
+}
+.features li {
+	padding:15px 0;
+	width:100%;
+}
+.features li i {
+	padding-right: 0.4rem;
+}
+.foot {
+	font-size:0.95rem;
+	text-transform: capitalize;
+}
+.personal .content,.personal .foot {
+	background: #2ecc71;
+}
+.personal .content:after {
+	border-top-color:#2ecc71;
+}
+.personal .foot:after {
+	border-top-color:#CCC;
+}
+.professional .content,.professional .foot {
+	background: #3498db;
+}
+.professional .content:after {
+	border-top-color:#3498db;
+}
+.professional .foot:after {
+	border-top-color:#CCC;
+}
+.business .content,.business .foot {
+	background: #9b59b6;
+}
+.business .content:after {
+	border-top-color:#9b59b6;
+}
+.business .foot:after {
+	border-top-color:#CCC;
+}
+
+.foot:hover
+{
+	background:green;
+}
